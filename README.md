@@ -2,10 +2,10 @@
 
 ## design
 
-![[design/home.png]]
+![[home.png]]
 https://shorturl.at/qBqAE
 
-![[design/Colors.png]]
+![[Colors.png]]
 
-![[design/product-card.png]]
+![[product-card.png]]
 https://shorturl.at/zIuFf

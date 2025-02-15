@@ -2,10 +2,8 @@
 
 ## design
 
-![[home.png]]
-https://shorturl.at/qBqAE
+![home.png](https://github.com/ISsam777/dev-web/blob/main/design/home.png)
 
-![[Colors.png]]
+![Colors.png](https://github.com/ISsam777/dev-web/blob/main/design/Colors.png)
 
-![[product-card.png]]
-https://shorturl.at/zIuFf
+![product-card.png](https://github.com/ISsam777/dev-web/blob/main/design/product-card.png)

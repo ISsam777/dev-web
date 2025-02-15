@@ -1,6 +1,6 @@
 :root {
-  --primary: #fffffa;
-  --secondary: #0075f2;
+  --background: #fffffa;
+  --links: #0075f2;
   --text: #1f2232;
 }
 * {

@@ -1,10 +1,75 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link href="css/main.css" rel="stylesheet" />
+
+    <title>survey form</title>
+
+    <link href="main.css" rel="stylesheet" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="bg">
+      <form id="survey-form">
+        <h1 id="title">survey form</h1>
+
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+
+        <fieldset>
+          <label id="name-label" for="name"> Name </label><br />
+
+          <input id="name" type="text" required placeholder="name" />
+
+          <br />
+
+          <label id="email-label" for="email"> email </label><br />
+
+          <input id="email" type="email" required placeholder="email" />
+
+          <br />
+
+          <label id="age-label" for="number"> Age </label><br />
+
+          <input id="age" type="age" min="12" max="90" placeholder="age" />
+
+          <br />
+
+          <label for="age"> describe your role: </label><br />
+
+          <select name="" id="dropdown">
+            <option value="">students</option>
+
+            <option value="">full time job</option>
+
+            <option value="">part time job</option>
+
+            <option value="">Others</option>
+          </select>
+
+          <br />
+
+          <label for="">do you recommend this website: </label><br />
+
+          <input value="1" type="radio" name="yes" checked="" />
+
+          <label for="yes"> Yes</label>
+
+          <br />
+
+          <input value="2" type="radio" name="no" />
+
+          <label for="no"> No</label><br />
+
+          <input value="3" type="radio" name="no" />
+
+          <label for="no"> maybe </label><br />
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>

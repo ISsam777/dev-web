@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
 :root {
   --background: #fffffa;
   --links: #0075f2;
@@ -5,11 +6,16 @@
 }
 * {
   margin: 0;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
 }
 body {
   background-color: var(--background);
-  font-size: 15px;
   color: var(--text);
+}
+h1 {
+  font-size: 1.3rem;
+  font-family: "Oswald", serif;
 }
 nav {
   display: flex;
@@ -21,11 +27,7 @@ nav {
   width: 100%;
   height: 3rem;
 }
-/**/
-/*.logo {*/
-/*  font-size: 1.3rem;*/
-/*  font-weight: 900;*/
-/*}*/
+
 .menu {
   display: flex;
   width: 100%;
@@ -48,8 +50,8 @@ a {
   color: var(--background);
 }
 a:hover {
-  font-weight: 900;
   cursor: pointer;
-  transition: 0.3s;
+  text-decoration: underline;
+  transition: 0.5s;
   color: var(--links);
 }

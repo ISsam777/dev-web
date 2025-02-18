@@ -8,20 +8,16 @@
 
     <title>survey form</title>
 
-    <link href="main.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="bg">
-      <form id="survey-form">
-        <h1 id="title">survey form</h1>
-
-        <p id="description">
-          Thank you for taking the time to help us improve the platform
-        </p>
+      <form id="login-form">
+        <h1 id="title">Sign in</h1>
 
         <fieldset>
-          <label id="name-label" for="name"> Name </label><br />
+          <label id="name-label" for="name"> UserName </label><br />
 
           <input id="name" type="text" required placeholder="name" />
 
@@ -42,32 +38,14 @@
           <label for="age"> describe your role: </label><br />
 
           <select name="" id="dropdown">
-            <option value="">students</option>
+            <option value="">students or teacher</option>
 
             <option value="">full time job</option>
 
-            <option value="">part time job</option>
-
-            <option value="">Others</option>
+            <option value="">Gamer</option>
           </select>
 
           <br />
-
-          <label for="">do you recommend this website: </label><br />
-
-          <input value="1" type="radio" name="yes" checked="" />
-
-          <label for="yes"> Yes</label>
-
-          <br />
-
-          <input value="2" type="radio" name="no" />
-
-          <label for="no"> No</label><br />
-
-          <input value="3" type="radio" name="no" />
-
-          <label for="no"> maybe </label><br />
         </fieldset>
       </form>
     </div>

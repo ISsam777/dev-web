@@ -1,14 +1,17 @@
+/*fonts and colors*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
 :root {
-  --background: #fffffa;
-  --links: #0075f2;
-  --text: #1f2232;
+  --background: hsl(60, 100%, 99.02%);
+  --links: hsl(210.99, 100%, 47.45%);
+  --text: hsl(230.53, 23.46%, 15.88%);
+  --gray: hsl(230.53, 10%, 75%);
 }
 * {
   margin: 0;
   font-family: "Montserrat", serif;
   font-size: 16px;
 }
+/*********************/
 body {
   background-color: var(--background);
   color: var(--text);
@@ -17,6 +20,7 @@ h1 {
   font-size: 1.3rem;
   font-family: "Oswald", serif;
 }
+/*nav bar*/
 nav {
   display: flex;
   flex-direction: row;
@@ -45,7 +49,7 @@ ul {
   list-style: none;
 }
 
-a {
+ul a {
   text-decoration: none;
   color: var(--background);
 }
@@ -55,3 +59,53 @@ a:hover {
   transition: 0.5s;
   color: var(--links);
 }
+/***************************/
+
+/*login page*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 50%;
+  margin: 20% 0;
+}
+label {
+  font-family: "Oswald", serif;
+  font-weight: 900;
+  color: var(--gray);
+}
+input {
+  height: 2rem;
+  border-radius: 5px;
+  background-color: var(--background);
+  border: 1px solid #001f2232;
+  font-family: "Montserrat", serif;
+  margin-bottom: 2rem;
+}
+button {
+  height: 2rem;
+  background-color: var(--links);
+  color: var(--background);
+  border: solid var(--links);
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+button:hover {
+  height: 2rem;
+  background-color: var(--text);
+  color: var(--background);
+  border: 1px solid var(--text);
+  transition: 0.2s;
+}
+a {
+  color: var(--links);
+}
+
+/* ****************** */

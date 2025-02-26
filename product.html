@@ -10,7 +10,7 @@
     <nav>
       <h1 class="logo">techDZ</h1>
       <div class="menu">
-        <ul class="nav_links">
+        <ul class="nav-links">
           <li><a href="index.html">Homepage</a></li>
           <li>
             <a href="product.html">products</a>
@@ -24,26 +24,38 @@
         </ul>
       </div>
     </nav>
-
-    <aside>
-      <h1 class="categorie">brand</h1>
-      <ul>
-        <li><input type="checkbox">HP</input></li>
-        <li><input type="checkbox">lenovo</input></li>
-        <li><input type="checkbox">asus</input></li>
-        <li><input type="checkbox">apple</input></li>
-        <li><input type="checkbox">DELL</input></li>
-      </ul>
-    </aside>
-    <div class="products">
-      <div class="product-card">
-        <img src="assets/laptop1.jpg" alt="" height="300px" width="500px" />
-        <div class="text">
-          <h1>product name</h1>
-          <span id="categorie">categorie:gaming</span>
-          <span id="price">200$</span>
-          <span id="rating">rating: 9/10</span>
-          <button>Add to cart</button>
+    <div class="product-container">
+      <aside class="side-bar">
+        <h1 class="brand">brand</h1>
+        <ul>
+          <li>
+            <label for="hp">hp</label>
+            <input type="checkbox" id="hp" />
+          </li>
+          <li>
+            <label for="dell">DELL</label>
+            <input type="checkbox" id="dell" />
+          </li>
+          <li>
+            <label for="lenovo">lenovo</label>
+            <input type="checkbox" id="lenovo" />
+          </li>
+          <li>
+            <label for="asus">asus</label>
+            <input type="checkbox" id="asus" />
+          </li>
+        </ul>
+      </aside>
+      <div class="products">
+        <div class="product-card">
+          <img src="assets/laptop1.jpg" alt="" height="300px" width="500px" />
+          <div class="text">
+            <h1>product name</h1>
+            <span id="categorie">categorie:gaming</span>
+            <span id="price">200$</span>
+            <span id="rating">rating: 9/10</span>
+            <button>Add to cart</button>
+          </div>
         </div>
       </div>
     </div>

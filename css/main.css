@@ -20,6 +20,29 @@ h1 {
   font-size: 1.3rem;
   font-family: "Oswald", serif;
 }
+/*side-bar*/
+.side-bar {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 2px var(--gray);
+}
+
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+}
+.side-bar label {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  color: var(--text);
+}
+.product-container {
+  display: flex;
+  flex-direction: row;
+}
 /*nav bar*/
 nav {
   display: flex;
@@ -40,7 +63,7 @@ nav {
   justify-content: space-between;
 }
 
-ul {
+.nav-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +72,7 @@ ul {
   list-style: none;
 }
 
-ul a {
+.nav-links a {
   text-decoration: none;
   color: var(--background);
 }
@@ -92,20 +115,18 @@ input {
 button {
   height: 2rem;
   background-color: var(--links);
-  color: var(--background);
-  border: solid var(--links);
+  color: var(--text);
   margin-top: 1rem;
-  border-radius: 1rem;
+  border: none;
+  border-radius: 0.5rem;
 }
 button:hover {
-  height: 2rem;
   background-color: var(--text);
   color: var(--background);
-  border: 1px solid var(--text);
   transition: 0.2s;
 }
 a {
   color: var(--links);
 }
 
-/* ****************** */
+/********************/

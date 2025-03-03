@@ -58,7 +58,7 @@ nav {
   background-color: var(--text);
   color: var(--background);
   width: 100%;
-  height: 3rem;
+  height: 4rem;
 }
 
 .menu {
@@ -67,6 +67,10 @@ nav {
   align-items: center;
   padding: 30px 10px;
   justify-content: space-between;
+}
+nav h1 a {
+  text-decoration: none;
+  color: var(--background);
 }
 
 .nav-links {
@@ -82,12 +86,21 @@ nav {
   text-decoration: none;
   color: var(--background);
 }
-a:hover {
+.nav-links a:hover {
   cursor: pointer;
   text-decoration: underline;
   transition: 0.5s;
-  color: var(--links);
 }
+#searchbar {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+  background-color: var(--background);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
 /***************************/
 
 /*login page*/
@@ -119,7 +132,8 @@ input {
   margin-bottom: 2rem;
 }
 button {
-  height: 2rem;
+  height: 3rem;
+  width: 10rem;
   background-color: var(--links);
   color: var(--text);
   margin-top: 1rem;
@@ -143,13 +157,15 @@ a {
   flex-wrap: wrap;
 }
 .product-card img {
-  width: 10rem;
-  height: 10rem;
+  width: 150px;
+  height: 150px;
   margin-right: 1rem;
 }
 #price {
   font-family: "Oswald", serif;
   font-weight: 900;
+  font-size: 2rem;
+  color: var(--links);
 }
 
 .product-card .buy {
@@ -157,11 +173,13 @@ a {
   flex-direction: column;
   margin-left: 10rem;
   align-items: center;
+  width: 10%;
 }
 
 .product-card .discription {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 /********************/

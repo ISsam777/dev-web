@@ -8,16 +8,43 @@
   </head>
   <body>
     <nav>
-      <h1 class="logo">techDZ</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Homepage</a></li>
-        <li>
-          <a href="product.html">products</a>
-        </li>
-        <li>
-          <a href="login.html">login</a>
-        </li>
-      </ul>
+      <h1 class="logo"><a href="index.html">techDZ</a></h1>
+      <div class="menu">
+        <ul class="nav-links">
+          <li>
+            <a href="product.html">products</a>
+          </li>
+          <li>
+            <a href="login.html">login</a>
+          </li>
+        </ul>
+      </div>
+      <!--search bar-->
+      <input
+        id="searchbar"
+        onkeyup="search_product()"
+        type="text"
+        name="search"
+        placeholder="Search for a laptop.."
+      />
+      <!---->
+      <!--  <ul id="list">-->
+      <!--    <li class="product">Cat</li>-->
+      <!--    <li class="product">Dog</li>-->
+      <!--    <li class="product">Elephant</li>-->
+      <!--    <li class="product">Fish</li>-->
+      <!--    <li class="product">Gorilla</li>-->
+      <!--    <li class="product">Monkey</li>-->
+      <!--    <li class="product">Turtle</li>-->
+      <!--    <li class="product">Whale</li>-->
+      <!--    <li class="product">Alligator</li>-->
+      <!--    <li class="product">Donkey</li>-->
+      <!--    <li class="product">Horse</li>-->
+      <!--  </ul>-->
+      <!--</div>-->
+      <!---->
+      <!--<script src="./script.js"></script>-->
+      <!---->
     </nav>
     <div class="product-container">
       <aside class="side-bar">
@@ -43,53 +70,77 @@
       </aside>
       <div class="products">
         <div class="product-card">
-          <img src="assets/laptop1.jpg" alt="" />
+          <img src="images/lenovo1.jpg" alt="" />
           <div class="discription">
             <h1>Lenovo Ideapad 330-8gb ram-i3 8th gen</h1>
-            <span id="categorie">categorie:gaming</span>
+            <span id="categorie">gaming</span>
             <span id="rating">rating: 9/10</span>
           </div>
           <div class="buy">
-            <span id="price">200$</span>
+            <span id="price">400$</span>
             <button>Add to cart</button>
           </div>
         </div>
         <hr />
         <div class="product-card">
-          <img src="assets/laptop1.jpg" alt="" />
+          <img src="images/asus2.jpg" alt="" />
           <div class="discription">
-            <h1>Lenovo Ideapad 330-8gb ram-i3 8th gen</h1>
-            <span id="categorie">categorie:gaming</span>
-            <span id="rating">rating: 9/10</span>
+            <h1>
+              ASUS Zenbook 14 OLED 14” TouchScreen Laptop - Intel Core Ultra 5
+              with 8GB Memory - 512GB SSD
+            </h1>
+            <span id="categorie">business</span>
+            <span id="rating">rating: 7/10</span>
           </div>
           <div class="buy">
-            <span id="price">200$</span>
+            <span id="price">800$</span>
             <button>Add to cart</button>
           </div>
         </div>
         <hr />
         <div class="product-card">
-          <img src="assets/laptop1.jpg" alt="" />
+          <img src="images/asus1.jpg" alt="" />
           <div class="discription">
-            <h1>Lenovo Ideapad 330-8gb ram-i3 8th gen</h1>
-            <span id="categorie">categorie:gaming</span>
+            <h1>
+              ASUS ROG Zephyrus G16 16" FHD 165Hz Gaming Laptop - Intel 13th Gen
+              Core i7 - 16GB RAM - RTX 4070 - 512GB SSD
+            </h1>
+            <span id="categorie">gaming</span>
             <span id="rating">rating: 9/10</span>
           </div>
           <div class="buy">
-            <span id="price">200$</span>
+            <span id="price">1600$</span>
             <button>Add to cart</button>
           </div>
         </div>
         <hr />
         <div class="product-card">
-          <img src="assets/laptop1.jpg" alt="" />
+          <img src="images/hp2.jpg" alt="" />
           <div class="discription">
-            <h1>Lenovo Ideapad 330-8gb ram-i3 8th gen</h1>
+            <h1>
+              HP OmniBook X -14" 2.2K Touch-Screen Laptop- 16GB Memory - 1TB SDD
+            </h1>
             <span id="categorie">categorie:gaming</span>
             <span id="rating">rating: 9/10</span>
           </div>
           <div class="buy">
-            <span id="price">200$</span>
+            <span id="price">800$</span>
+            <button>Add to cart</button>
+          </div>
+        </div>
+        <hr />
+        <div class="product-card">
+          <img src="images/hp1.jpg" alt="" />
+          <div class="discription">
+            <h1>
+              HP - 15.6" Touch-Screen Laptop - Intel Core i5 - 8GB Memory -
+              512GB SSD
+            </h1>
+            <span id="categorie">categorie:gaming</span>
+            <span id="rating">rating: 9/10</span>
+          </div>
+          <div class="buy">
+            <span id="price">600$</span>
             <button>Add to cart</button>
           </div>
         </div>

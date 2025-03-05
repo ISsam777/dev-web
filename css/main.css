@@ -50,11 +50,19 @@ body {
   margin: 2vh 0;
   justify-content: center;
 }
-/*nav bar*/
+/********************
+ ********************
+ **                **
+ ** NAVIGATION BAR **
+ **                **
+ ********************
+ ********************/
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
   background-color: var(--text);
   color: var(--background);
   width: 100%;

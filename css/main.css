@@ -51,11 +51,7 @@ body {
   justify-content: center;
 }
 /********************
- ********************
- **                **
  ** NAVIGATION BAR **
- **                **
- ********************
  ********************/
 
 nav {
@@ -186,6 +182,40 @@ a {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+/********************
+ ** ABOUT US PAGE  **
+ ********************/
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  height: 100vh;
+  width: 100vw;
+}
+.container1 {
+  background-color: var(--background);
+  color: var(--text);
+  height: fit-content;
+  width: fit-content;
+  line-height: 2.2rem;
+  text-align: flex-start;
+  width: 90%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 3rem 2rem;
+}
+.greeting {
+  color: var(--links);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.title {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+section p {
+  font-size: 1.2rem;
 }
 
 /********************/

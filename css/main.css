@@ -233,7 +233,6 @@ a {
 
 @media only screen and (max-width: 600px) {
   .product-card {
-    background-color: var(--gray);
     flex-direction: column;
     align-items: center;
     text-align: flex-start;

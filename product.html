@@ -9,39 +9,42 @@
   <body>
     <nav>
       <h1 class="logo"><a href="index.html">techDZ</a></h1>
-      <div class="menu">
-        <ul class="nav-links">
-          <li>
-            <a href="product.html">products</a>
-          </li>
-          <li>
-            <a href="login.html">login</a>
-          </li>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="aboutus.html">About</a></li>
+          <li><a class="menu__item" href="product.html">products</a></li>
         </ul>
       </div>
     </nav>
+
     <div class="product-container">
-      <!--side-bar-->
-      <fieldset class="side-bar" action="">
-        <input type="checkbox" id="hp" name="hp" value="hp" />
-        <label for="hp"> hp</label><br />
-        <input type="checkbox" id="dell" name="dell" value="dell" />
-        <label for="dell">dell</label><br />
-        <input type="checkbox" id="asus" name="asus" value="asus" />
-        <label for="asus">asus</label><br /><br />
-        <input type="checkbox" id="lenovo" name="lenovo" value="lenovo" />
-        <label for="lenovo">lenovo</label><br /><br />
-        <br />
-        <!--search bar-->
-        <input
-          id="searchbar"
-          onkeyup="search_product()"
-          type="text"
-          name="search"
-          placeholder="Search..."
-        />
-        <script src="./script.js"></script>
-      </fieldset>
+      <!----side-bar-->
+      <!--<fieldset class="side-bar" action="">-->
+      <!--  <input type="checkbox" id="hp" name="hp" value="hp" />-->
+      <!--  <label for="hp"> hp</label><br />-->
+      <!--  <input type="checkbox" id="dell" name="dell" value="dell" />-->
+      <!--  <label for="dell">dell</label><br />-->
+      <!--  <input type="checkbox" id="asus" name="asus" value="asus" />-->
+      <!--  <label for="asus">asus</label><br /><br />-->
+      <!--  <input type="checkbox" id="lenovo" name="lenovo" value="lenovo" />-->
+      <!--  <label for="lenovo">lenovo</label><br /><br />-->
+      <!--  <br />-->
+      <!--search bar-->
+      <!--  <input-->
+      <!--    id="searchbar"-->
+      <!--    onkeyup="search_product()"-->
+      <!--    type="text"-->
+      <!--    name="search"-->
+      <!--    placeholder="Search..."-->
+      <!--  />-->
+      <!--  <script src="./script.js"></script>-->
+      <!--</fieldset>-->
       <!--products card -->
       <div class="products">
         <div class="product-card">

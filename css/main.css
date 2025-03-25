@@ -4,7 +4,7 @@
   --background: hsl(60, 100%, 99.02%);
   --links: hsl(210.99, 100%, 47.45%);
   --text: hsl(230.53, 23.46%, 15.88%);
-  --gray: hsl(230.53, 10%, 75%);
+  --gray: hsl(230.53, 10%, 95%);
 }
 * {
   margin: 0;
@@ -65,35 +65,82 @@ nav {
   height: 4rem;
 }
 
-.menu {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding: 30px 10px;
-  justify-content: center;
-}
 nav h1 a {
   text-decoration: none;
   color: var(--background);
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  list-style: none;
+/* humbergur menu */
+#menu__toggle {
+  opacity: 0;
 }
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--background);
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
 }
-.nav-links a:hover {
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
   cursor: pointer;
-  text-decoration: underline;
-  transition: 0.5s;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--background);
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: var(--gray);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: var(--gray);
 }
 #searchbar {
   padding: 10px;
@@ -175,13 +222,35 @@ a {
   flex-direction: column;
   margin-left: 10rem;
   align-items: center;
-  width: 10%;
+  width: 5%;
 }
 
 .product-card .discription {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-card {
+    background-color: var(--gray);
+    flex-direction: column;
+    align-items: center;
+    text-align: flex-start;
+    padding: 1rem 0;
+    width: 90vw;
+    margin: 5vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+  }
+  .product-card .buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+  }
 }
 /********************
  ** ABOUT US PAGE  **

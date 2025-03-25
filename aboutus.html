@@ -11,23 +11,20 @@
   <body>
     <nav>
       <h1 class="logo"><a href="index.html">techDZ</a></h1>
-      <div class="menu">
-        <ul class="nav-links">
-          <li>
-            <a href="product.html">Home</a>
-          </li>
-          <li>
-            <a href="product.html">products</a>
-          </li>
-          <li>
-            <a href="login.html">login</a>
-          </li>
-          <li>
-            <a href="login.html">about</a>
-          </li>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="aboutus.html">About</a></li>
+          <li><a class="menu__item" href="product.html">products</a></li>
         </ul>
       </div>
     </nav>
+
     <div class="main">
       <div class="container1">
         <h1 class="greeting">Welcome to Techdz</h1>

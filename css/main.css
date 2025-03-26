@@ -17,7 +17,7 @@ body {
   color: var(--text);
 }
 .product-card h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Oswald", serif;
   color: var(--text);
 }
@@ -42,11 +42,12 @@ body {
 .product-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .products {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin: 2vh 0;
   justify-content: center;
 }
@@ -202,43 +203,40 @@ a {
 /*product card*/
 .product-card {
   display: flex;
-  margin-left: 1rem;
-  width: 70vw;
+  padding: 2rem;
+  width: 90vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
 .product-card img {
   width: 150px;
   height: 150px;
-  margin-right: 1rem;
 }
 #price {
   font-family: "Oswald", serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--links);
 }
 
 .product-card .buy {
   display: flex;
   flex-direction: column;
-  margin-left: 10rem;
-  align-items: center;
-  width: 5%;
 }
 
 .product-card .discription {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .product-card {
     flex-direction: column;
     align-items: center;
     text-align: flex-start;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     width: 90vw;
-    margin: 5vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
   }
@@ -249,6 +247,21 @@ a {
     margin: 0;
     align-items: center;
     width: 100%;
+  }
+  .product-card h1 {
+    width: 100%;
+    display: flex;
+    font-size: 1.1rem;
+  }
+  #price {
+    display: flex;
+    width: 100%;
+    font-size: 1.3rem;
+    justify-content: end;
+    margin-right: 3rem;
+  }
+  .product-card button {
+    width: 90%;
   }
 }
 /********************

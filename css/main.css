@@ -58,17 +58,19 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
   background-color: var(--text);
   color: var(--background);
   width: 100%;
-  height: 4rem;
+  height: 3rem;
 }
 
 nav h1 a {
   text-decoration: none;
   color: var(--background);
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  margin-left: 4rem;
 }
 
 /* humbergur menu */
@@ -272,8 +274,6 @@ a {
   align-items: center;
   justify-content: center;
   background-color: var(--background);
-  height: 100vh;
-  width: 100vw;
 }
 .container1 {
   background-color: var(--background);
@@ -283,12 +283,12 @@ a {
   line-height: 2.2rem;
   text-align: flex-start;
   width: 90%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
   padding: 3rem 2rem;
 }
 .greeting {
   color: var(--links);
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .title {

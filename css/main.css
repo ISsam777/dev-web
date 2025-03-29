@@ -16,11 +16,26 @@ body {
   background-color: var(--background);
   color: var(--text);
 }
+/*homepage*/
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+}
+.brand-logo {
+  height: 128px;
+  width: 128px;
+}
+
 .product-card h1 {
   font-size: 1.2rem;
   font-family: "Oswald", serif;
   color: var(--text);
 }
+
 /*side-bar*/
 .side-bar input[type="checkbox"] {
   height: 1rem;

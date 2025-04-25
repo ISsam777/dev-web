@@ -1,35 +1,31 @@
 <!doctype html>
-
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link href="css/main.css" rel="stylesheet" />
-    <title>login</title>
-
-    <link href="main.css" rel="stylesheet" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
-    <div class="bg">
-      <form id="login">
-        <fieldset>
-          <label id="email-label" for="email"> Email </label><br />
+    <div class="container">
+      <h1>Registration Page</h1>
+      <form method="post" action="register.php">
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name" required />
 
-          <input id="email" type="email" required />
+        <label for="username"> Username: </label>
+        <input type="text" id="username" name="username" required />
 
-          <br />
-          <label id="password-label" for="password"> Password </label><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-          <input id="password" type="password" required />
-          <button type="submit">login</button>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
 
-          <p>or <a href="sign.html">Create an account</a></p>
-          <br />
-        </fieldset>
+        <input type="submit" value="Register" />
       </form>
+      <p>Already have an account?</p>
+      <a href="login.html">Click Here</a>
     </div>
+    <br />
   </body>
 </html>

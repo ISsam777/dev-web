@@ -209,12 +209,13 @@ button {
   border: none;
   border-radius: 0.5rem;
 }
+
 button:hover {
   background-color: var(--text);
   color: var(--background);
   transition: 0.2s;
 }
-.nav_button {
+#nav_button {
   display: flex;
   height: 2rem;
   width: 5rem;
@@ -222,7 +223,6 @@ button:hover {
   border-color: var(--links);
   color: var(--links);
   align-self: center;
-  justify-self:
 }
 a {
   color: var(--links);

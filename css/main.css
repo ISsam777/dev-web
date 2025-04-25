@@ -61,9 +61,9 @@ body {
 }
 .products {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
-  margin: 2vh 0;
+  margin: 1rem 0;
   justify-content: center;
 }
 /********************
@@ -182,14 +182,16 @@ form {
 #login fieldset {
   display: flex;
   flex-direction: column;
+  background-color: var(--gray);
+  border-radius: 1rem;
   border: none;
-  height: 50%;
-  margin: 20% 0;
+  padding: 3rem 3rem;
+  /* height: 50%; */
 }
 label {
   font-family: "Oswald", serif;
   font-weight: 900;
-  color: var(--gray);
+  color: var(--links);
 }
 input {
   height: 2rem;
@@ -197,14 +199,13 @@ input {
   background-color: var(--background);
   border: 1px solid #001f2232;
   font-family: "Montserrat", serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 button {
   height: 3rem;
   width: 10rem;
   background-color: var(--links);
   color: var(--text);
-  margin-top: 1rem;
   border: none;
   border-radius: 0.5rem;
 }
@@ -213,32 +214,57 @@ button:hover {
   color: var(--background);
   transition: 0.2s;
 }
+.nav_button {
+  display: flex;
+  height: 2rem;
+  width: 5rem;
+  background-color: var(--text);
+  border-color: var(--links);
+  color: var(--links);
+  align-self: center;
+  justify-self:
+}
 a {
   color: var(--links);
+  text-decoration: none;
 }
 
 /*product card*/
 .product-card {
-  display: flex;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: flex-start;
+  padding: 1rem 0.5rem;
   width: 90vw;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
-.product-card img {
-  width: 150px;
-  height: 150px;
-}
-#price {
-  font-family: "Oswald", serif;
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: var(--links);
-}
-
 .product-card .buy {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: center;
+  width: 100%;
+}
+.product-card h1 {
+  width: 100%;
+  display: flex;
+  font-size: 1.1rem;
+}
+#price {
+  display: flex;
+  width: 100%;
+  font-size: 1.3rem;
+  justify-content: end;
+  margin-right: 3rem;
+}
+.product-card button {
+  width: 90%;
+}
+.product-card img {
+  width: 150px;
+  height: 150px;
 }
 
 .product-card .discription {

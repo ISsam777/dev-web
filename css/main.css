@@ -17,17 +17,17 @@ body {
   color: var(--text);
 }
 /*homepage*/
-.container {
+.brands {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding:0;
+  margin:0;
 }
-.logos {
-  display: flex;
-  flex-direction: row;
-}
-.brand-logo {
-  height: 128px;
-  width: 128px;
+.brands img {
+  height: 75px;
+  width: 75px;
+  margin: 0 5px;
 }
 
 .product-card h1 {
@@ -61,7 +61,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1rem 0;
-  /* justify-content: center; */
+  justify-content: center;
 }
 /********************
  ** NAVIGATION BAR **
@@ -244,53 +244,55 @@ a {
   text-decoration: none;
 }
 
-/*product card*/
+/* product card */
 .product-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  text-align: flex-start;
   padding: 1rem 0.5rem;
   width: 250px;
-  height: 250px;
+  min-height: 400px; /* Increase height to fit content */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-}
-.product-card .buy {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
-}
-.product-card h1 {
-  width: 100%;
-  display: flex;
-  font-size: 1.1rem;
-}
-#price {
-  display: flex;
-  width: 100%;
-  font-size: 1.3rem;
-  justify-content: end;
-  margin-right: 3rem;
-}
-.product-card button {
-  width: 90%;
-  margin-top: auto;
-}
-.product-card img {
-  width: 100px;
-  height: 150px;
 }
 
 .product-card .discription {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-grow: 1; /* Grow to fill space */
+  width: 100%;
 }
 
+.product-card h1 {
+  width: 100%;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+#price {
+  display: flex;
+  width: 100%;
+  font-size: 1.3rem;
+  justify-content: flex-end; /* Corrected */
+  margin-right: 1rem;
+}
+
+.product-card img {
+  width: 100px;
+  height: 150px;
+}
+
+.product-card .buy {
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  align-items: center;
+  width: 100%;
+}
+
+.product-card button {
+  width: 90%;
+  margin-top: auto; /* Push button to bottom */
+}
 /* @media only screen and (max-width: 800px) { */
 /*   .products { */
 /*     flex-direction: column; */

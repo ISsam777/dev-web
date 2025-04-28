@@ -85,6 +85,24 @@ nav h1 a {
   margin-left: 4rem;
 }
 
+.nav_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 80%;
+  margin-left: auto;
+}
+.nav_buttons button a {
+  color: var(--links);
+}
+.nav_buttons button {
+  background-color: var(--text);
+  /* border-color: var(--links); */
+  border: 1px var(--links) solid;
+  height: 2.3rem;
+  width: 7rem;
+  margin: 2px 2px;
+}
 /* humbergur menu */
 #menu__toggle {
   opacity: 0;
@@ -228,13 +246,14 @@ a {
 
 /*product card*/
 .product-card {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* text-align: flex-start; */
+  justify-content: space-between;
+  text-align: flex-start;
   padding: 1rem 0.5rem;
-  width: 350px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
@@ -242,7 +261,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin: 0;
   align-items: center;
   width: 100%;
 }
@@ -260,52 +278,58 @@ a {
 }
 .product-card button {
   width: 90%;
+  margin-top: auto;
 }
 .product-card img {
-  width: 150px;
+  width: 100px;
   height: 150px;
 }
 
 .product-card .discription {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  flex-grow: 1;
 }
 
-@media only screen and (max-width: 800px) {
-  .product-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: flex-start;
-    padding: 1rem 0.5rem;
-    width: 90vw;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
-  }
-  .product-card .buy {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    align-items: center;
-    width: 100%;
-  }
-  .product-card h1 {
-    width: 100%;
-    display: flex;
-    font-size: 1.1rem;
-  }
-  #price {
-    display: flex;
-    width: 100%;
-    font-size: 1.3rem;
-    justify-content: end;
-    margin-right: 3rem;
-  }
-  .product-card button {
-    width: 90%;
-  }
-}
+/* @media only screen and (max-width: 800px) { */
+/*   .products { */
+/*     flex-direction: column; */
+/*   } */
+/*   .product-card { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*     padding: 1rem 0.5rem; */
+/*     width: 90vw; */
+/*     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+/*     border-radius: 10px; */
+/*   } */
+/*   .product-card .buy { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     justify-content: flex-start; */
+/*     margin: 0; */
+/*     align-items: center; */
+/*     text-align: center; */
+/*     width: 100%; */
+/*   } */
+/*   .product-card h1 { */
+/*     width: 100%; */
+/*     display: flex; */
+/*     font-size: 1.1rem; */
+/*   } */
+/*   #price { */
+/*     display: flex; */
+/*     width: 100%; */
+/*     font-size: 1.3rem; */
+/*     justify-content: end; */
+/*     margin-right: 3rem; */
+/*   } */
+/*   .product-card button { */
+/*     width: 90%; */
+/*   } */
+/* } */
 /********************
  ** ABOUT US PAGE  **
  ********************/
